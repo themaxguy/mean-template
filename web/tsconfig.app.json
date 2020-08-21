@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@directives/*": ["app/directives/*"],
+      "@login/*": ["app/login/*"],
+      "@shared/*": ["app/shared/*"],
+      "@testing/*": ["testing/*"]
+    },
+    "outDir": "./out-tsc/app",
+    "types": []
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}

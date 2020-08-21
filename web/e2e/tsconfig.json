@@ -1,0 +1,20 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@directives/*": ["app/directives/*"],
+      "@login/*": ["app/login/*"],
+      "@shared/*": ["app/shared/*"],
+      "@testing/*": ["testing/*"]
+    },
+    "outDir": "../out-tsc/e2e",
+    "module": "commonjs",
+    "target": "es5",
+    "types": [
+      "jasmine",
+      "jasminewd2",
+      "node"
+    ]
+  }
+}
